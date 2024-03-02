@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/fruits"
+        android:contentDescription="@string/app_name"
+        android:layout_width="@dimen/fruits_width"
+        android:layout_height="@dimen/fruits_height"
+        app:layout_constraintBottom_toTopOf="@id/product_selection"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/product_selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_product"
+        app:layout_constraintBottom_toTopOf="@id/apples"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fruits" />
+
+    <Button
+        android:id="@+id/apples"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/apples"
+        app:layout_constraintTop_toBottomOf="@id/product_selection"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/orange"/>
+
+    <Button
+        android:id="@+id/orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/orange"
+        app:layout_constraintTop_toBottomOf="@id/apples"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bananas"/>
+
+    <Button
+        android:id="@+id/bananas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bananas"
+        app:layout_constraintTop_toBottomOf="@id/orange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/lemons"/>
+
+    <Button
+        android:id="@+id/lemons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lemons"
+        app:layout_constraintTop_toBottomOf="@id/bananas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

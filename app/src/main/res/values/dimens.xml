@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="fruits_width">100dp</dimen>
+    <dimen name="fruits_height">80dp</dimen>
+</resources>
